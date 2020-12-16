@@ -16,7 +16,7 @@ class AWS():
 		reqPrice = totalRequests * self.REQUEST_PRICE
 		#print(reqPrice)
 
-		totalTime = requests * (time / 1000)
+		totalTime = (time / 1000)
 		compute = totalTime * (memory / 1024)
 		totalCompute = compute - self.freeCompute
 		compPrice = totalCompute * self.COMPUTE_PRICE
@@ -90,7 +90,7 @@ class Google():
 			cpu = 0
 			
 		
-		totalTime = requests * (time / 1000)
+		totalTime =(time / 1000)
 		compute = totalTime * (memory / 1024)
 		computeCPU = totalTime * (cpu / 1000)
 	
@@ -136,7 +136,7 @@ class Azure():
 		reqPrice = totalRequests * self.REQUEST_PRICE
 		
 		
-		totalTime = requests * (time/1000)
+		totalTime = (time/1000)
 		compute = totalTime * (memory/1024) 
 		totalCompute = compute - self.freeCompute
 		compPrice = totalCompute * self.COMPUTE_PRICE
@@ -171,7 +171,7 @@ class IBM():
 
 		#print(reqPrice)
 
-		totalTime = requests * (time / 1000)
+		totalTime = (time / 1000)
 		compute = totalTime * (memory / 1024)
 		totalCompute = compute - self.freeCompute
 		compPrice = totalCompute * self.COMPUTE_PRICE
